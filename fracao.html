@@ -1,0 +1,15 @@
+<canvas width="600" height="400"></canvas>
+
+<script>
+    var tela = document.querySelector("canvas");
+    var pincel = tela.getContext("2d");
+
+    function exibeTexto(texto, x, y) {
+        pincel.font = "20px Georgia";
+        pincel.fillStyle = "black";
+        pincel.fillText(texto, x, y);
+    }
+
+    exibeTexto("Qual é a fração?", 50, 30);
+
+</script>
