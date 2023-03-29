@@ -1,3 +1,4 @@
+<meta charset="UTF-8">
 <canvas width="600" height="400"></canvas>
 
 <script>
@@ -11,5 +12,21 @@
     }
 
     exibeTexto("Qual é a fração?", 50, 30);
+
+    
+    function desenhaQuadrado(x, y, tamanho, cor) {
+        pincel.fillStyle = cor;
+        pincel.fillRect(x, y, tamanho, tamanho);
+        pincel.fillStroke = "black";
+        pincel.strokeRect(x, y, tamanho, tamanho);
+    }
+
+    var x = 50;
+    var y = 50;
+    var tamanho = 100;
+    desenhaQuadrado(x, y, tamanho, "green");
+    desenhaQuadrado(x+100, y, tamanho, "green");
+    desenhaQuadrado(x+200, y, tamanho, "green");
+    desenhaQuadrado(x+300, y, tamanho, "white");
 
 </script>
